@@ -393,6 +393,10 @@ public class AirMapView extends MapView implements GoogleMap.InfoWindowAdapter,
             AirMapUrlTile urlTileView = (AirMapUrlTile) child;
             urlTileView.addToMap(map);
             features.add(index, urlTileView);
+        } else if (child instanceof AirMapGroundOverlay) {
+            AirMapGroundOverlay groundOverlay = (AirMapGroundOverlay) child;
+            groundOverlay.addToMap(map);
+            features.add(index, groundOverlay);
         } else {
             // TODO(lmr): throw? User shouldn't be adding non-feature children.
         }

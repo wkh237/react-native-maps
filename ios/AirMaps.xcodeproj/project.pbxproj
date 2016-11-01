@@ -22,6 +22,9 @@
 		1125B2E61C4AD3DA007D0023 /* AIRMapPolylineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1125B2D61C4AD3DA007D0023 /* AIRMapPolylineManager.m */; };
 		1125B2E71C4AD3DA007D0023 /* RCTConvert+MoreMapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1125B2D91C4AD3DA007D0023 /* RCTConvert+MoreMapKit.m */; };
 		1125B2F21C4AD445007D0023 /* SMCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1125B2F11C4AD445007D0023 /* SMCalloutView.m */; };
+		A118B70A1DC72BEE004463A7 /* AIRMapGroundOverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A118B7091DC72BEE004463A7 /* AIRMapGroundOverlayManager.m */; };
+		A118B70C1DC72BFC004463A7 /* AIRMapGroundOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A118B70B1DC72BFC004463A7 /* AIRMapGroundOverlay.m */; };
+		A118B7101DC744E4004463A7 /* AIRMapGroundOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A118B70F1DC744E4004463A7 /* AIRMapGroundOverlayRenderer.m */; };
 		DA6C26381C9E2AFE0035349F /* AIRMapUrlTile.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C26371C9E2AFE0035349F /* AIRMapUrlTile.m */; };
 		DA6C263E1C9E324A0035349F /* AIRMapUrlTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6C263D1C9E324A0035349F /* AIRMapUrlTileManager.m */; };
 /* End PBXBuildFile section */
@@ -70,6 +73,12 @@
 		1125B2F01C4AD445007D0023 /* SMCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMCalloutView.h; path = AirMaps/Callout/SMCalloutView.h; sourceTree = SOURCE_ROOT; };
 		1125B2F11C4AD445007D0023 /* SMCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMCalloutView.m; path = AirMaps/Callout/SMCalloutView.m; sourceTree = SOURCE_ROOT; };
 		11FA5C511C4A1296003AC2EE /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirMaps.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A118B7081DC72BDF004463A7 /* AIRMapGroundOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRMapGroundOverlay.h; sourceTree = "<group>"; };
+		A118B7091DC72BEE004463A7 /* AIRMapGroundOverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRMapGroundOverlayManager.m; sourceTree = "<group>"; };
+		A118B70B1DC72BFC004463A7 /* AIRMapGroundOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRMapGroundOverlay.m; sourceTree = "<group>"; };
+		A118B70D1DC72C0A004463A7 /* AIRMapGroundOverlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRMapGroundOverlayManager.h; sourceTree = "<group>"; };
+		A118B70E1DC744D2004463A7 /* AIRMapGroundOverlayRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIRMapGroundOverlayRenderer.h; sourceTree = "<group>"; };
+		A118B70F1DC744E4004463A7 /* AIRMapGroundOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRMapGroundOverlayRenderer.m; sourceTree = "<group>"; };
 		DA6C26361C9E2AFE0035349F /* AIRMapUrlTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRMapUrlTile.h; sourceTree = "<group>"; };
 		DA6C26371C9E2AFE0035349F /* AIRMapUrlTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRMapUrlTile.m; sourceTree = "<group>"; };
 		DA6C263C1C9E324A0035349F /* AIRMapUrlTileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRMapUrlTileManager.h; sourceTree = "<group>"; };
@@ -132,7 +141,6 @@
 				1125B2D31C4AD3DA007D0023 /* AIRMapPolyline.h */,
 				1125B2D51C4AD3DA007D0023 /* AIRMapPolylineManager.h */,
 				1125B2D61C4AD3DA007D0023 /* AIRMapPolylineManager.m */,
-				21B6E2D21D99B886007E664F /* AIRMapSnapshot.h */,
 				1125B2F01C4AD445007D0023 /* SMCalloutView.h */,
 				1125B2F11C4AD445007D0023 /* SMCalloutView.m */,
 				1125B2D81C4AD3DA007D0023 /* RCTConvert+MoreMapKit.h */,
@@ -141,6 +149,12 @@
 				DA6C26371C9E2AFE0035349F /* AIRMapUrlTile.m */,
 				DA6C263C1C9E324A0035349F /* AIRMapUrlTileManager.h */,
 				DA6C263D1C9E324A0035349F /* AIRMapUrlTileManager.m */,
+				A118B7081DC72BDF004463A7 /* AIRMapGroundOverlay.h */,
+				A118B70B1DC72BFC004463A7 /* AIRMapGroundOverlay.m */,
+				A118B7091DC72BEE004463A7 /* AIRMapGroundOverlayManager.m */,
+				A118B70D1DC72C0A004463A7 /* AIRMapGroundOverlayManager.h */,
+				A118B70E1DC744D2004463A7 /* AIRMapGroundOverlayRenderer.h */,
+				A118B70F1DC744E4004463A7 /* AIRMapGroundOverlayRenderer.m */,
 			);
 			path = AirMaps;
 			sourceTree = "<group>";
@@ -203,16 +217,19 @@
 			files = (
 				1125B2E31C4AD3DA007D0023 /* AIRMapPolygon.m in Sources */,
 				1125B2E41C4AD3DA007D0023 /* AIRMapPolygonManager.m in Sources */,
+				A118B70A1DC72BEE004463A7 /* AIRMapGroundOverlayManager.m in Sources */,
 				1125B2DB1C4AD3DA007D0023 /* AIRMapCallout.m in Sources */,
 				1125B2E01C4AD3DA007D0023 /* AIRMapManager.m in Sources */,
 				1125B2E61C4AD3DA007D0023 /* AIRMapPolylineManager.m in Sources */,
 				1125B2DD1C4AD3DA007D0023 /* AIRMapCircle.m in Sources */,
 				1125B2E51C4AD3DA007D0023 /* AIRMapPolyline.m in Sources */,
+				A118B70C1DC72BFC004463A7 /* AIRMapGroundOverlay.m in Sources */,
 				DA6C263E1C9E324A0035349F /* AIRMapUrlTileManager.m in Sources */,
 				1125B2DA1C4AD3DA007D0023 /* AIRMap.m in Sources */,
 				1125B2E71C4AD3DA007D0023 /* RCTConvert+MoreMapKit.m in Sources */,
 				1125B2DF1C4AD3DA007D0023 /* AIRMapCoordinate.m in Sources */,
 				1125B2F21C4AD445007D0023 /* SMCalloutView.m in Sources */,
+				A118B7101DC744E4004463A7 /* AIRMapGroundOverlayRenderer.m in Sources */,
 				1125B2E11C4AD3DA007D0023 /* AIRMapMarker.m in Sources */,
 				1125B2E21C4AD3DA007D0023 /* AIRMapMarkerManager.m in Sources */,
 				DA6C26381C9E2AFE0035349F /* AIRMapUrlTile.m in Sources */,
@@ -311,7 +328,9 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
+					"/Users/xeiyan/code/supercarsapp_outsource2/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
+					"/Users/xeiyan/code/supercarsapp_outsource2/node_modules/react-native/Libraries/Image",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
@@ -325,7 +344,9 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
+					"/Users/xeiyan/code/supercarsapp_outsource2/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
+					"/Users/xeiyan/code/supercarsapp_outsource2/node_modules/react-native/Libraries/Image",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
