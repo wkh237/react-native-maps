@@ -20,14 +20,30 @@
 - (void)setUrl:(NSString *)url
 {
     _url = url;
-    overlayImage = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
-    [self update];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [NSURLConnection sendAsynchronousRequest:urlRequest
+                                       queue:queue
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+    {
+        
+        if (error)
+        {
+        }
+        else
+        {
+            overlayImage = data;
+            [self update];
+        }
+    }];
+    
 }
 
 
 - (void)setCoordinates:(NSArray<AIRMapCoordinate *> *)coordinates
 {
     _coordinates = coordinates;
+    [self update];
 }
 
 - (void) update
